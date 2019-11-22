@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h6b-Ub-ncl">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UITableViewCell Animations-->
+        <scene sceneID="5Jk-9f-VZ2">
+            <objects>
+                <viewController storyboardIdentifier="ILAnimatedTableViewCellVC" id="h6b-Ub-ncl" customClass="kAnimatedTableViewCellVC" customModule="InspeeroLibrary_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="awV-GM-kFG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AKQ-ki-efI">
+                                <rect key="frame" x="120" y="0.0" width="360" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWD-ex-zg2">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Fade">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="styleButtonClicked:" destination="h6b-Ub-ncl" eventType="touchUpInside" id="FMB-qJ-D7C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nL7-RR-j3p">
+                                        <rect key="frame" x="0.0" y="40" width="360" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Move Up with Bounce">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="styleButtonClicked:" destination="h6b-Ub-ncl" eventType="touchUpInside" id="1xD-LW-lQo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXH-fg-6GB">
+                                        <rect key="frame" x="0.0" y="80" width="360" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Slide">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="styleButtonClicked:" destination="h6b-Ub-ncl" eventType="touchUpInside" id="ZLG-LW-D93"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfc-nC-cHr">
+                                        <rect key="frame" x="0.0" y="120" width="360" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Move Up with Fade">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="styleButtonClicked:" destination="h6b-Ub-ncl" eventType="touchUpInside" id="JmY-G1-r2o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ki0-1u-2Pn">
+                                        <rect key="frame" x="0.0" y="160" width="360" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Move Down with Bounce">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="styleButtonClicked:" destination="h6b-Ub-ncl" eventType="touchUpInside" id="mKy-Lt-vGj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6X-9l-0dy">
+                                        <rect key="frame" x="0.0" y="200" width="360" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Move Down with Fade">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="styleButtonClicked:" destination="h6b-Ub-ncl" eventType="touchUpInside" id="kyM-cu-xIa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FXa-Z8-WUR" customClass="kAnimatedTableView" customModule="InspeeroLibrary">
+                                <rect key="frame" x="0.0" y="240" width="600" height="360"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animateFrom">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animateStyle">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AKQ-ki-efI" firstAttribute="centerX" secondItem="x98-Vf-Kp3" secondAttribute="centerX" id="2Ly-Lb-1s7"/>
+                            <constraint firstItem="x98-Vf-Kp3" firstAttribute="bottom" secondItem="FXa-Z8-WUR" secondAttribute="bottom" id="5nZ-eI-S96"/>
+                            <constraint firstItem="FXa-Z8-WUR" firstAttribute="centerX" secondItem="x98-Vf-Kp3" secondAttribute="centerX" id="AcA-fr-iNs"/>
+                            <constraint firstItem="AKQ-ki-efI" firstAttribute="width" secondItem="awV-GM-kFG" secondAttribute="width" multiplier="0.6" id="Z7Z-yd-vK4"/>
+                            <constraint firstItem="FXa-Z8-WUR" firstAttribute="top" secondItem="AKQ-ki-efI" secondAttribute="bottom" id="fys-JS-9dp"/>
+                            <constraint firstItem="FXa-Z8-WUR" firstAttribute="height" secondItem="awV-GM-kFG" secondAttribute="height" multiplier="0.6" id="g3G-Nn-Otg"/>
+                            <constraint firstItem="FXa-Z8-WUR" firstAttribute="width" secondItem="awV-GM-kFG" secondAttribute="width" id="mNH-PI-Zpg"/>
+                            <constraint firstItem="AKQ-ki-efI" firstAttribute="top" secondItem="x98-Vf-Kp3" secondAttribute="top" id="mzz-V2-mZ0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x98-Vf-Kp3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UITableViewCell Animations" id="q03-zP-2gI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="5MU-3M-Wqh">
+                            <connections>
+                                <action selector="onRefresh:" destination="h6b-Ub-ncl" id="JIz-C0-Odm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="animatedTableView" destination="FXa-Z8-WUR" id="kaD-Gz-d9b"/>
+                        <outletCollection property="animationStyleButtonOutletCollection" destination="qWD-ex-zg2" collectionClass="NSMutableArray" id="PwG-xp-FAM"/>
+                        <outletCollection property="animationStyleButtonOutletCollection" destination="nL7-RR-j3p" collectionClass="NSMutableArray" id="76C-f3-sjx"/>
+                        <outletCollection property="animationStyleButtonOutletCollection" destination="IXH-fg-6GB" collectionClass="NSMutableArray" id="3zZ-x5-DTk"/>
+                        <outletCollection property="animationStyleButtonOutletCollection" destination="Vfc-nC-cHr" collectionClass="NSMutableArray" id="3uQ-5C-3JM"/>
+                        <outletCollection property="animationStyleButtonOutletCollection" destination="Ki0-1u-2Pn" collectionClass="NSMutableArray" id="OHg-mQ-mlk"/>
+                        <outletCollection property="animationStyleButtonOutletCollection" destination="N6X-9l-0dy" collectionClass="NSMutableArray" id="QVO-Jw-oZ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xjM-Hu-DXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3300" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+</document>
